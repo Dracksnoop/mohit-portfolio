@@ -254,7 +254,7 @@ main { position: relative; z-index: 1; }
 .portrait__ring--2 { inset: 4%; animation: spin 14s linear infinite reverse; background: conic-gradient(from 180deg, transparent 0 70%, rgba(255,255,255,0.5) 90%, transparent 100%); border: 1px dashed rgba(255,255,255,0.12); -webkit-mask: none; mask: none; }
 @keyframes spin { to { rotate: 360deg; } }
 
-.chip, .datacard {
+.chip {
   position: absolute; z-index: 2; opacity: 0; transform: translateY(20px) scale(0.9);
   background: rgba(11, 14, 23, 0.75); border: 1px solid var(--line-strong);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
@@ -264,11 +264,8 @@ main { position: relative; z-index: 1; }
 .chip--1 { top: 6%; left: -4%; }
 .chip--2 { top: 20%; right: -4%; color: var(--violet); }
 .chip--3 { bottom: 12%; left: -6%; color: #ff9ee8; }
-.datacard { padding: 0.9rem 1.1rem; border-radius: 14px; display: grid; gap: 0.15rem; }
-.datacard span { color: var(--muted); font-size: 0.62rem; }
-.datacard strong { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.datacard--1 { right: -4%; bottom: 6%; }
-.datacard--2 { left: 0; bottom: -8%; }
+.chip--4 { bottom: 20%; right: -3%; color: #ffd166; }
+.chip--5 { bottom: -4%; left: 30%; color: var(--fg); }
 
 .hero__scroll { position: absolute; left: 50%; bottom: 2rem; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.6rem; color: var(--muted); opacity: 0; font-size: 0.62rem; }
 .hero__scroll i { width: 1px; height: 56px; background: linear-gradient(to bottom, var(--cyan), transparent); position: relative; overflow: hidden; }
@@ -491,10 +488,11 @@ main { position: relative; z-index: 1; }
   .hero__grid { grid-template-columns: 1fr; }
   .hero__visual { order: -1; }
   .portrait { width: min(260px, 62vw); }
-  .datacard { display: none; }
   .chip--1 { top: 2%; left: -8%; }
   .chip--2 { top: 24%; right: -14%; }
-  .chip--3 { bottom: 8%; left: -14%; }
+  .chip--3 { bottom: 10%; left: -14%; }
+  .chip--4 { bottom: 26%; right: -12%; }
+  .chip--5 { bottom: -9%; left: 32%; }
   .hero__scroll { display: none; }
   .hero { padding-bottom: 4rem; }
   .hero { padding-top: calc(var(--nav-h) + 1.5rem); }
