@@ -3,11 +3,9 @@
 One-page, scroll-driven portfolio. Static HTML/CSS/JS, no build step.
 Motion is powered by [GSAP](https://gsap.com) + ScrollTrigger and [Lenis](https://lenis.darkroom.engineering) (loaded from CDN).
 
-## Before you deploy (1 thing)
+## Contact links
 
-**Add your LinkedIn URL**: open `js/main.js` and replace the `linkedin` value at the top (`SITE.linkedin`).
-
-Everything else (photo, email, phone, GitHub, projects, certificates) is already filled in.
+Email, phone, GitHub and LinkedIn are set in `index.html` (contact section) and `js/main.js` (`SITE.linkedin`).
 
 The hero photo is `assets/profile.jpg` (a copy of `assets/WhatsApp Image 2026-07-11 at 10.30.56 PM.jpg`,
 which is no longer referenced and can be deleted). It is shown whole inside a white circle.

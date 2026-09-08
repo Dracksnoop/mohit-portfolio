@@ -5,7 +5,7 @@
 
 /* ---------- 1. EDIT ME ---------- */
 const SITE = {
-  linkedin: 'https://www.linkedin.com/in/REPLACE-WITH-YOUR-HANDLE', // TODO: paste your LinkedIn profile URL
+  linkedin: 'https://www.linkedin.com/in/mohit-pal-0b7561352/',
   dob: new Date(2003, 10, 16), // 16 Nov 2003 (month is 0-based)
 };
 
@@ -31,7 +31,6 @@ const SITE = {
 
   const lenis = initLenis();
   initProgress();
-  initCursor(HOVER);
   initGridGlow(HOVER);
   initNav(lenis);
   initHeroCanvas(REDUCED);
@@ -182,35 +181,6 @@ function initProgress() {
     scaleX: 1, ease: 'none',
     scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: 0.3 },
   });
-}
-
-/* =========================================================
-   Custom cursor
-   ========================================================= */
-function initCursor(hover) {
-  if (!hover) return;
-  const dot = document.querySelector('.cursor');
-  const ring = document.querySelector('.cursor-ring');
-  if (!dot || !ring) return;
-  document.body.classList.add('has-cursor');
-
-  const rx = gsap.quickTo(ring, 'x', { duration: 0.4, ease: 'power3' });
-  const ry = gsap.quickTo(ring, 'y', { duration: 0.4, ease: 'power3' });
-  const dx = gsap.quickTo(dot, 'x', { duration: 0.1, ease: 'power3' });
-  const dy = gsap.quickTo(dot, 'y', { duration: 0.1, ease: 'power3' });
-
-  window.addEventListener('mousemove', e => {
-    rx(e.clientX); ry(e.clientY); dx(e.clientX); dy(e.clientY);
-  }, { passive: true });
-
-  document.addEventListener('mouseover', e => {
-    const hit = !!e.target.closest('a, button, .tilt, .cert, .metric, [data-hover]');
-    document.body.classList.toggle('is-hovering', hit);
-    gsap.to(ring, { scale: hit ? 1.9 : 1, duration: 0.35, ease: 'power3.out' });
-    gsap.to(dot, { scale: hit ? 0.5 : 1, duration: 0.35, ease: 'power3.out' });
-  });
-  document.documentElement.addEventListener('mouseleave', () => gsap.to([dot, ring], { opacity: 0, duration: 0.3 }));
-  document.documentElement.addEventListener('mouseenter', () => gsap.to([dot, ring], { opacity: 1, duration: 0.3 }));
 }
 
 /* =========================================================
