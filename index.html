@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit Pal — Business &amp; Data Analyst</title>
+  <meta name="description" content="Mohit Pal is a Business / Data Analyst from Gwalior, India. SQL, Python, Power BI and Excel — turning messy datasets into decisions that free up cash." />
+  <meta name="theme-color" content="#050609" />
+  <meta property="og:title" content="Mohit Pal — Business & Data Analyst" />
+  <meta property="og:description" content="SQL · Python · Power BI · Excel. Four end-to-end case studies, one obsession: insights that change a decision." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <noscript><style>.preloader{display:none!important}</style></noscript>
+</head>
+<body>
+
+  <!-- ====== PRELOADER ====== -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__log mono">
+        <span>&gt; connecting to mohit.db</span>
+        <span>&gt; SELECT * FROM skills, projects, impact;</span>
+        <span>&gt; 4 case studies · 29,519 rows · 0 nulls</span>
+      </div>
+      <div class="preloader__num mono">000</div>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <!-- ====== GLOBAL FX ====== -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="grid-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- ====== NAV ====== -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo mono" aria-label="Back to top">MP<span>_</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about" data-scramble>About</a>
+      <a href="#skills" data-scramble>Stack</a>
+      <a href="#experience" data-scramble>Experience</a>
+      <a href="#projects" data-scramble>Work</a>
+      <a href="#education" data-scramble>Education</a>
+      <a href="#certifications" data-scramble>Certs</a>
+      <a href="#contact" data-scramble>Contact</a>
+    </nav>
+    <a href="mailto:46.mr.mohit@gmail.com" class="btn btn--small btn--primary nav__cta magnetic"><span>Hire me</span></a>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu__links">
+      <a href="#about"><span class="mono">01</span>About</a>
+      <a href="#skills"><span class="mono">02</span>Stack</a>
+      <a href="#experience"><span class="mono">03</span>Experience</a>
+      <a href="#projects"><span class="mono">04</span>Work</a>
+      <a href="#education"><span class="mono">05</span>Education</a>
+      <a href="#certifications"><span class="mono">06</span>Certs</a>
+      <a href="#contact"><span class="mono">07</span>Contact</a>
+    </nav>
+    <div class="mobile-menu__foot mono">
+      <a href="mailto:46.mr.mohit@gmail.com">46.mr.mohit@gmail.com</a>
+      <a href="https://github.com/mohitt045" target="_blank" rel="noopener">github/mohitt045</a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section id="hero" class="hero">
+      <canvas id="net" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow mono" data-intro><span class="blink">▮</span> BUSINESS &amp; DATA ANALYST — GWALIOR, IN</p>
+          <h1 class="hero__name">
+            <span class="line"><span class="split-chars">MOHIT</span></span>
+            <span class="line"><span class="split-chars outline">PAL</span></span>
+          </h1>
+          <p class="hero__tag" data-intro>I turn messy datasets into <em>decisions that free up cash</em>. SQL, Python, Power BI, and a habit of testing before deleting.</p>
+          <div class="hero__cta" data-intro>
+            <a href="#projects" class="btn btn--primary magnetic"><span>View the work</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+            <a href="https://github.com/mohitt045" class="btn btn--ghost magnetic" target="_blank" rel="noopener"><span>GitHub</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          </div>
+          <ul class="hero__meta mono" data-intro>
+            <li><i class="dot dot--live"></i>Open to Data / Business Analyst roles</li>
+            <li>B.Tech · Mathematics &amp; Computing · MITS</li>
+            <li><span data-age>22</span> y/o · Gwalior, India</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="portrait">
+            <div class="portrait__ring" aria-hidden="true"></div>
+            <div class="portrait__ring portrait__ring--2" aria-hidden="true"></div>
+            <div class="portrait__frame">
+              <img src="assets/profile.jpg" alt="Portrait of Mohit Pal" onerror="this.parentElement.classList.add('no-img')" />
+              <div class="portrait__scan" aria-hidden="true"></div>
+            </div>
+            <div class="chip chip--1 mono" data-float>Python</div>
+            <div class="chip chip--2 mono" data-float>SQL</div>
+            <div class="chip chip--3 mono" data-float>Power BI</div>
+            <div class="datacard datacard--1" data-float>
+              <span class="mono">Unapplied cash found</span>
+              <strong>$5.2M</strong>
+            </div>
+            <div class="datacard datacard--2" data-float>
+              <span class="mono">Churn model accuracy</span>
+              <strong>90.5%</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll mono" aria-hidden="true"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <!-- ====== MARQUEE ====== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__row" data-marquee data-dir="1">
+        <div class="marquee__inner">
+          <span>Python</span><i>✦</i><span>SQL</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Power BI</span><i>✦</i><span>Excel</span><i>✦</i><span>Pandas</span><i>✦</i><span>NumPy</span><i>✦</i><span>Scikit-learn</span><i>✦</i><span>Power Query</span><i>✦</i><span>DAX</span><i>✦</i><span>Streamlit</span><i>✦</i>
+        </div>
+      </div>
+      <div class="marquee__row marquee__row--alt" data-marquee data-dir="-1">
+        <div class="marquee__inner">
+          <span>ETL</span><i>✦</i><span>Data Cleaning</span><i>✦</i><span>Hypothesis Testing</span><i>✦</i><span>A/B Testing</span><i>✦</i><span>Predictive Modelling</span><i>✦</i><span>Dashboards</span><i>✦</i><span>Automation</span><i>✦</i><span>Statistical Analysis</span><i>✦</i><span>Data Visualization</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== ABOUT ====== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num mono">01</span>
+          <h2 class="section__title" data-split>About</h2>
+          <span class="section__line"></span>
+        </div>
+
+        <div class="about__grid">
+          <p class="about__lead" data-words>Data Analyst in training with hands-on expertise in <em>SQL, Python, Power BI, and Excel</em>. Skilled in data visualization, statistical analysis, and predictive modelling, with practical experience in ETL, automation, and dashboard development. Known for translating complex datasets into <em>clear, actionable business insights</em>.</p>
+
+          <div class="terminal" data-terminal data-reveal>
+            <div class="terminal__bar"><i></i><i></i><i></i><span class="mono">mohit@analyst — psql</span></div>
+            <pre class="terminal__body mono" aria-live="polite"></pre>
+          </div>
+        </div>
+
+        <ul class="stats">
+          <li class="stat" data-reveal>
+            <strong class="stat__num" data-count="4">0</strong>
+            <span>End-to-end case studies, problem to dashboard</span>
+          </li>
+          <li class="stat" data-reveal data-delay="0.1">
+            <strong class="stat__num" data-count="5.2" data-prefix="$" data-suffix="M" data-decimals="1">0</strong>
+            <span>Cash already banked but still chased as debt, uncovered by reconciliation</span>
+          </li>
+          <li class="stat" data-reveal data-delay="0.2">
+            <strong class="stat__num" data-count="90.5" data-suffix="%" data-decimals="1">0</strong>
+            <span>Test accuracy of the churn model shipped as a Streamlit app</span>
+          </li>
+          <li class="stat" data-reveal data-delay="0.3">
+            <strong class="stat__num" data-count="29519" data-suffix="+">0</strong>
+            <span>Records cleaned, modelled and questioned across projects</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== SKILLS ====== -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num mono">02</span>
+          <h2 class="section__title" data-split>Stack</h2>
+          <span class="section__line"></span>
+        </div>
+
+        <div class="skills__grid">
+          <article class="card tilt" data-reveal>
+            <div class="card__glow"></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3Z"/><path d="M4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+            <h3>Programming &amp; Databases</h3>
+            <ul class="chips"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>SQL</li><li>PostgreSQL</li></ul>
+          </article>
+
+          <article class="card tilt" data-reveal data-delay="0.08">
+            <div class="card__glow"></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M6 16V9"/><path d="M11 16V4"/><path d="M16 16v-6"/><path d="M21 16v-3"/></svg></div>
+            <h3>Analysis &amp; Visualization</h3>
+            <ul class="chips"><li>Excel</li><li>Power BI</li><li>DAX</li><li>Matplotlib</li><li>Seaborn</li></ul>
+          </article>
+
+          <article class="card tilt" data-reveal data-delay="0.16">
+            <div class="card__glow"></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 14h6v6h-6z"/><path d="M10 7h4a3 3 0 0 1 3 3v4"/><path d="M14 17h-4a3 3 0 0 1-3-3v-4"/></svg></div>
+            <h3>Automation &amp; ETL</h3>
+            <ul class="chips"><li>Power Query</li><li>Python Automation</li><li>Data Pipelines</li><li>Reconciliation</li></ul>
+          </article>
+
+          <article class="card tilt" data-reveal data-delay="0.24">
+            <div class="card__glow"></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M3 17c3-8 6-8 9 0s6 8 9 0"/><path d="M3 21h18"/></svg></div>
+            <h3>Statistics &amp; ML</h3>
+            <ul class="chips"><li>Hypothesis Testing</li><li>A/B Testing</li><li>Data Cleaning</li><li>Supervised Learning</li><li>Unsupervised Learning</li><li>GridSearchCV</li></ul>
+          </article>
+
+          <article class="card tilt" data-reveal data-delay="0.32">
+            <div class="card__glow"></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6L7.1 18.2 8 12.7 4 8.8 9.5 8z"/></svg></div>
+            <h3>Core Strengths</h3>
+            <ul class="chips"><li>Problem-Solving</li><li>Critical Thinking</li><li>Communication</li><li>Attention to Detail</li></ul>
+          </article>
+
+          <article class="card tilt" data-reveal data-delay="0.4">
+            <div class="card__glow"></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24"><path d="M4 17l6-6-6-6"/><path d="M12 19h8"/></svg></div>
+            <h3>Ship it</h3>
+            <ul class="chips"><li>Streamlit</li><li>joblib</li><li>Git &amp; GitHub</li><li>Jupyter</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== EXPERIENCE ====== -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num mono">03</span>
+          <h2 class="section__title" data-split>Experience</h2>
+          <span class="section__line"></span>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__line" aria-hidden="true"><i></i></div>
+
+          <article class="tl-item" data-reveal>
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__meta mono">APR 2026 — MAY 2026</div>
+            <div class="tl-item__body">
+              <h3>LLM Post-Training Intern</h3>
+              <p class="tl-item__org">Ethara AI</p>
+              <ul class="bullets">
+                <li>Supported data preparation, analysis, and evaluation tasks across AI and data projects for LLM post-training workflows.</li>
+                <li>Used Python and SQL to analyse large-scale training datasets, identifying data quality issues and patterns in model outputs.</li>
+                <li>Built reports and summaries of evaluation findings, translating results into insights that supported post-training decisions.</li>
+              </ul>
+              <a class="link-arrow" href="https://drive.google.com/file/d/14Kmc9gJc81GEOzINUuPYZWoGbIsfY2ej/view?usp=sharing" target="_blank" rel="noopener">View internship certificate <i>↗</i></a>
+            </div>
+          </article>
+
+          <article class="tl-item" data-reveal>
+            <div class="tl-item__dot" aria-hidden="true"></div>
+            <div class="tl-item__meta mono">JAN 2025 — JAN 2026</div>
+            <div class="tl-item__body">
+              <h3>Credit Linked Program in Data Science</h3>
+              <p class="tl-item__org">IIT Guwahati</p>
+              <ul class="bullets">
+                <li>A year-long, credit-linked programme covering the statistics, machine learning and data-engineering foundations behind the projects below.</li>
+              </ul>
+              <a class="link-arrow" href="https://drive.google.com/file/d/1pBYB0zlT7TdqW9R7u7mi1c8T3WavoNlH/view?usp=sharing" target="_blank" rel="noopener">Admission letter &amp; ID <i>↗</i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== PROJECTS (horizontal scroll) ====== -->
+    <section id="projects" class="projects">
+      <div class="projects__track">
+
+        <div class="project project--intro">
+          <div class="project__inner">
+            <span class="section__num mono">04</span>
+            <h2 class="section__title">Selected<br />work</h2>
+            <p class="project__intro-text">Four end-to-end case studies. Each one starts with a business problem, not a dataset, and ends with a number someone can act on.</p>
+            <div class="projects__hint mono"><span>SCROLL</span><i>→</i></div>
+          </div>
+        </div>
+
+        <!-- 01 O2C -->
+        <article class="project" data-project="o2c">
+          <span class="project__bg" aria-hidden="true">01</span>
+          <div class="project__inner">
+            <div class="project__left">
+              <span class="project__num mono">01 / 04</span>
+              <h3 class="project__title">Order-to-Cash Analytics</h3>
+              <ul class="tags"><li>Python</li><li>PostgreSQL</li><li>Power BI</li></ul>
+              <p class="project__p"><strong>Problem.</strong> $32.6M outstanding across 10,000 invoices, DSO drifting from ~87 to 122.6 days, and 28.8% of the debt already past 90 days. Finance could see the balance, but not where the recoverable cash was hiding.</p>
+              <p class="project__p"><strong>What I did.</strong> Reconciled three deliberately messy CSV extracts into a trusted dataset (10 classes of data-quality issue, 22 engineered columns), wrote 15 SQL queries with CTEs and window functions, and built a 3-page Power BI dashboard on a star schema with DAX.</p>
+              <div class="project__links">
+                <a class="btn btn--primary magnetic" href="https://github.com/mohitt045/Order-to-Cash-Analysis" target="_blank" rel="noopener"><span>GitHub</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+                <button class="btn btn--ghost magnetic" data-open="o2c"><span>Full case study</span></button>
+              </div>
+            </div>
+            <div class="project__right">
+              <div class="metric"><strong>$5.2M</strong><span>cash already in the bank but still chased as debt. 270 unapplied payments, 152 customers.</span></div>
+              <div class="metric"><strong>~$468K</strong><span>working capital trapped by a 9.2-day Services billing delay vs 1.9 days elsewhere.</span></div>
+              <div class="metric"><strong>$3.38M</strong><span>disputed value traced to a likely LATAM price-list root cause (20.4% dispute rate vs ~6.8%).</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Customer behaviour -->
+        <article class="project" data-project="shop">
+          <span class="project__bg" aria-hidden="true">02</span>
+          <div class="project__inner">
+            <div class="project__left">
+              <span class="project__num mono">02 / 04</span>
+              <h3 class="project__title">Customer Shopping Behaviour</h3>
+              <ul class="tags"><li>Python</li><li>PostgreSQL</li><li>Power BI</li></ul>
+              <p class="project__p"><strong>Problem.</strong> A retailer had revenue but no idea where it came from: which customers to retain, whether discounts bought incremental sales or just cut margin, and why so few buyers converted to subscriptions.</p>
+              <p class="project__p"><strong>What I did.</strong> Cleaned and feature-engineered 3,900 transactions in Pandas, loaded them into PostgreSQL, answered ten business questions in SQL, segmented customers into New / Returning / Loyal, and shipped an interactive Power BI dashboard.</p>
+              <div class="project__links">
+                <a class="btn btn--primary magnetic" href="https://github.com/mohitt045/Customer-Behavior-Analysis" target="_blank" rel="noopener"><span>GitHub</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+                <button class="btn btn--ghost magnetic" data-open="shop"><span>Full case study</span></button>
+              </div>
+            </div>
+            <div class="project__right">
+              <div class="metric"><strong>73%</strong><span>of customers were non-subscribers, and subscribers spent no more ($59.49 vs $59.87). The programme wasn't delivering.</span></div>
+              <div class="metric"><strong>47–50%</strong><span>discount rate on five products (Hat, Sneakers, Coat, Sweater, Pants). Discounting had become the default.</span></div>
+              <div class="metric"><strong>80%</strong><span>3,116 loyal customers carrying the business: where retention spend should actually go.</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 Churn -->
+        <article class="project" data-project="churn">
+          <span class="project__bg" aria-hidden="true">03</span>
+          <div class="project__inner">
+            <div class="project__left">
+              <span class="project__num mono">03 / 04</span>
+              <h3 class="project__title">Customer Churn Predictor</h3>
+              <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Streamlit</li></ul>
+              <p class="project__p"><strong>Problem.</strong> Retention teams reacted after cancellations, spreading discounts evenly with no way to tell who was actually at risk. Can the data a business already holds flag who is likely to leave, before they leave?</p>
+              <p class="project__p"><strong>What I did.</strong> Built an end-to-end pipeline on 1,000 records: EDA, a compact four-feature set, five algorithms tuned with 5-fold GridSearchCV, and a linear SVM packaged with its scaler into a Streamlit app a non-technical rep can use.</p>
+              <div class="project__links">
+                <a class="btn btn--primary magnetic" href="https://github.com/mohitt045/Customer-churn-predictor" target="_blank" rel="noopener"><span>GitHub</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+                <button class="btn btn--ghost magnetic" data-open="churn"><span>Full case study</span></button>
+              </div>
+            </div>
+            <div class="project__right">
+              <div class="metric"><strong>90.5%</strong><span>test accuracy with a linear SVM (C = 0.01): tied for best, with the simplest decision boundary.</span></div>
+              <div class="metric"><strong>17.5 vs 30.3</strong><span>months of tenure, churned vs retained. Risk lives in the first two years.</span></div>
+              <div class="metric"><strong>+$13 / mo</strong><span>higher bills for churned customers ($75.96 vs $62.55). Bill-shock is a real trigger.</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 EstateIQ -->
+        <article class="project" data-project="estate">
+          <span class="project__bg" aria-hidden="true">04</span>
+          <div class="project__inner">
+            <div class="project__left">
+              <span class="project__num mono">04 / 04</span>
+              <h3 class="project__title">EstateIQ — House Price Prediction</h3>
+              <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Streamlit</li></ul>
+              <p class="project__p"><strong>Problem.</strong> A buyer, a seller and a lender routinely arrive at three different prices for the same house. Give a non-expert an instant, reproducible estimate grounded in thousands of real transactions.</p>
+              <p class="project__p"><strong>What I did.</strong> 14,619 transactions, five inputs a homeowner can answer from memory, and three models of increasing complexity (Linear Regression, tuned Decision Tree, tuned Random Forest) judged on a 2,924-property hold-out set. Deployed as EstateIQ on Streamlit.</p>
+              <div class="project__links">
+                <a class="btn btn--primary magnetic" href="https://github.com/mohitt045/House-price-prediction" target="_blank" rel="noopener"><span>GitHub</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+                <button class="btn btn--ghost magnetic" data-open="estate"><span>Full case study</span></button>
+              </div>
+            </div>
+            <div class="project__right">
+              <div class="metric"><strong>R² 0.586</strong><span>Random Forest won on every metric: MAE ≈ 158,600 · RMSE 247,627.</span></div>
+              <div class="metric"><strong>−34%</strong><span>average error against a naive mean-prediction baseline of 240,169.</span></div>
+              <div class="metric"><strong>95.7%</strong><span>of the model's decision-making driven by living area. Square footage is the one input that must be right.</span></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects__progress" aria-hidden="true">
+        <span class="mono" data-proj-count>00 / 04</span>
+        <div class="projects__bar"><i></i></div>
+      </div>
+    </section>
+
+    <!-- ====== EDUCATION ====== -->
+    <section id="education" class="section education">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num mono">05</span>
+          <h2 class="section__title" data-split>Education</h2>
+          <span class="section__line"></span>
+        </div>
+
+        <div class="edu__grid">
+          <article class="card edu tilt" data-reveal>
+            <div class="card__glow"></div>
+            <span class="edu__when mono">MAY 2023 — PRESENT</span>
+            <h3>B.Tech, Mathematics &amp; Computing</h3>
+            <p>Madhav Institute of Technology and Science, Gwalior</p>
+          </article>
+          <article class="card edu tilt" data-reveal data-delay="0.1">
+            <div class="card__glow"></div>
+            <span class="edu__when mono">SCHOOLING · CLASS 10 &amp; 12</span>
+            <h3>Pragati Vidya Peeth</h3>
+            <p>Gwalior, Madhya Pradesh</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CERTIFICATIONS ====== -->
+    <section id="certifications" class="section certs">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__num mono">06</span>
+          <h2 class="section__title" data-split>Certifications</h2>
+          <span class="section__line"></span>
+        </div>
+
+        <div class="certs__list">
+          <a class="cert" href="https://drive.google.com/file/d/191WOQBVO3SKvnP35R5YFGazZIJQY1-oj/view?usp=sharing" target="_blank" rel="noopener" data-reveal>
+            <span class="cert__idx mono">01</span>
+            <div class="cert__body">
+              <h3>Data Analytics Job Simulation</h3>
+              <p>Deloitte · Jun 2026</p>
+            </div>
+            <span class="cert__arrow">↗</span>
+          </a>
+
+          <a class="cert" href="https://drive.google.com/file/d/1pBYB0zlT7TdqW9R7u7mi1c8T3WavoNlH/view?usp=sharing" target="_blank" rel="noopener" data-reveal>
+            <span class="cert__idx mono">02</span>
+            <div class="cert__body">
+              <h3>Credit Linked Program in Data Science</h3>
+              <p>IIT Guwahati · Jan 2025 – Jan 2026</p>
+            </div>
+            <span class="cert__arrow">↗</span>
+          </a>
+
+          <a class="cert" href="https://drive.google.com/file/d/1LeLH23F5GwiCF0JJJFZYanHpCn-uWXyZ/view?usp=sharing" target="_blank" rel="noopener" data-reveal>
+            <span class="cert__idx mono">03</span>
+            <div class="cert__body">
+              <h3>Smart India Hackathon</h3>
+              <p>Participation · 2024</p>
+            </div>
+            <span class="cert__arrow">↗</span>
+          </a>
+
+          <a class="cert" href="https://drive.google.com/file/d/1HrRQMRKR_kX0MxUi_1Nv4usIjzj9qwnK/view?usp=sharing" target="_blank" rel="noopener" data-reveal>
+            <span class="cert__idx mono">04</span>
+            <div class="cert__body">
+              <h3>GeeksforGeeks Student Chapter, MITS</h3>
+              <p>Member · 2024 – 2026</p>
+            </div>
+            <span class="cert__arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section id="contact" class="contact">
+      <div class="contact__blob" aria-hidden="true"></div>
+      <div class="container">
+        <p class="eyebrow mono" data-reveal><span class="section__num">07</span> — CONTACT</p>
+        <h2 class="contact__big">
+          <span class="line"><span class="split-chars" data-split-scroll>LET'S</span></span>
+          <span class="line"><span class="split-chars outline" data-split-scroll>TALK</span></span>
+        </h2>
+        <p class="contact__sub" data-reveal>Open to Data / Business Analyst roles and internships. If you have messy data and a question that matters, I'm interested.</p>
+        <a class="contact__email" href="mailto:46.mr.mohit@gmail.com" data-scramble data-reveal>46.mr.mohit@gmail.com</a>
+        <ul class="contact__links" data-reveal>
+          <li><a href="tel:+917746072605"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+91 77460 72605</a></li>
+          <li><a href="https://github.com/mohitt045" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a></li>
+          <li><a href="#" data-linkedin target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a></li>
+          <li><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Gwalior, India</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="mono">© <span data-year>2026</span> Mohit Pal</span>
+      <span class="mono footer__mid">Built with GSAP, Lenis &amp; too much coffee</span>
+      <a href="#hero" class="mono footer__top">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- ====== CASE STUDY MODAL ====== -->
+  <div class="modal" aria-hidden="true">
+    <div class="modal__bg" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Case study" data-lenis-prevent>
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <div class="modal__content"></div>
+    </div>
+  </div>
+
+  <!-- ====== CASE STUDY TEMPLATES (full text) ====== -->
+  <template id="case-o2c">
+    <span class="mono case__num">01 / 04</span>
+    <h2 class="case__title">Order-to-Cash (O2C) Analytics</h2>
+    <ul class="tags"><li>Python</li><li>PostgreSQL</li><li>Power BI</li></ul>
+    <a class="link-arrow" href="https://github.com/mohitt045/Order-to-Cash-Analysis" target="_blank" rel="noopener">View repository <i>↗</i></a>
+
+    <h4>Business problem</h4>
+    <p>A company had $32.6M outstanding across 10,000 invoices, with collections slowing badly. Days Sales Outstanding had drifted from about 87 days to 122.6 days in a year, and 28.8% of the debt was already more than 90 days overdue, where recovery rates collapse. Finance could see the balance but couldn't answer the questions that actually free up cash: how old is the debt, which collectors and regions are underperforming, why customers dispute invoices, and, most importantly, where is recoverable cash hiding? Every day of delay is a day the company has to borrow to cover payroll and suppliers, so slow collections hit profitability directly.</p>
+
+    <h4>What I did</h4>
+    <p>Turned three raw, deliberately messy CSV extracts into a trusted, reconciled analytical dataset, then answered the finance team's questions from it. Ten categories of data-quality issue were diagnosed and treated differently depending on whether they were real errors, honest gaps, or legitimate records that merely looked wrong. 22 analytical columns engineered, 15 SQL queries written (CTEs, window functions, multi-table joins), and a 3-page interactive Power BI dashboard built on a star schema with DAX measures.</p>
+
+    <h4>Impact: three costed recommendations</h4>
+    <ul class="bullets">
+      <li><strong>Found $5.2M of cash already sitting in the bank but still counted as debt.</strong> 270 payments had been received and banked but never matched to an invoice, affecting 152 customers, meaning those customers were still being chased for bills they had already paid. This was recovered by a validation step, not a chart: the reconciliation test failed by exactly the value of the 270 "unapplied" payments, proving they were genuine cash. Deleting them as junk during cleaning would have created a $5.2M hole and overstated what customers owed.</li>
+      <li><strong>Quantified ~$468K of working capital trapped by a self-inflicted billing delay.</strong> The Services unit took 9.2 days to raise an invoice after shipping versus 1.9 days for every other unit. Because the payment clock only starts at the invoice date, this delay is invisible on every aging report and cannot be recovered by chasing customers. Worth ~2 days off DSO once fixed.</li>
+      <li><strong>Traced $3.38M of disputed invoice value to a likely master-data root cause.</strong> LATAM disputed 20.4% of invoices against ~6.8% elsewhere, three times the rate, with 51% of those disputes coded "pricing discrepancy", pointing at the price list rather than customer behaviour.</li>
+    </ul>
+
+    <h4>Analytical judgement, not just tooling</h4>
+    <p>I tested before deleting, rejected an unsafe imputation route (recovering collector IDs via order_id would have been wrong because 474 orders span multiple customers), flagged what couldn't be honestly fixed, caught a load-time bug where Pandas silently read the region code "NA" (North America) as null and destroyed 84 customer records, and reported a hypothesis the data disproved: the assumed quarter-end sales spike didn't exist. I also stated the LATAM price-list finding as concentration, not proven causation, since no price-master table was supplied.</p>
+  </template>
+
+  <template id="case-shop">
+    <span class="mono case__num">02 / 04</span>
+    <h2 class="case__title">Customer Shopping Behaviour Analysis</h2>
+    <ul class="tags"><li>Python</li><li>PostgreSQL</li><li>Power BI</li></ul>
+    <a class="link-arrow" href="https://github.com/mohitt045/Customer-Behavior-Analysis" target="_blank" rel="noopener">View repository <i>↗</i></a>
+
+    <h4>Business problem</h4>
+    <p>A retailer was generating revenue but couldn't tell where that revenue came from or what was quietly eroding it: which customers were worth retaining, whether its discounts were buying incremental sales or just cutting margin on purchases that would have happened anyway, and why only a minority of its buyers were converting to subscriptions. Without that visibility, marketing spend, discount policy, and loyalty efforts were being decided on instinct rather than evidence.</p>
+
+    <h4>What I did</h4>
+    <p>Analysed 3,900 transactions end to end: cleaned and feature-engineered the data in Python (Pandas/NumPy), loaded it into PostgreSQL, and answered ten business questions in SQL covering revenue by gender and age group, discount dependence by product, subscriber vs. non-subscriber spend, repeat-purchase behaviour, and customer segmentation (New / Returning / Loyal). Delivered the findings as an interactive Power BI dashboard.</p>
+
+    <h4>Findings that drove decisions</h4>
+    <ul class="bullets">
+      <li>Found that 73% of customers were non-subscribers, and that subscribers spent no more on average than non-subscribers ($59.49 vs. $59.87), showing the subscription programme was not yet delivering value and needed genuine exclusive benefits rather than wider promotion.</li>
+      <li>Identified five products discounted on ~47–50% of all purchases (Hat, Sneakers, Coat, Sweater, Pants), flagging margin leakage where discounting had become the default rather than a lever.</li>
+      <li>Segmented the base and found 3,116 loyal customers (80%) carrying the business, focusing retention spend on the segment that actually drives revenue.</li>
+      <li>Mapped revenue concentration by age group and gender, letting marketing target the highest-contributing segments instead of spending evenly across the base.</li>
+    </ul>
+  </template>
+
+  <template id="case-churn">
+    <span class="mono case__num">03 / 04</span>
+    <h2 class="case__title">Customer Churn Prediction</h2>
+    <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Streamlit</li></ul>
+    <a class="link-arrow" href="https://github.com/mohitt045/Customer-churn-predictor" target="_blank" rel="noopener">View repository <i>↗</i></a>
+
+    <h4>Business problem</h4>
+    <p>Losing a paying customer costs a subscription business far more than keeping one, but retention teams were reacting after cancellations happened, spreading discounts and outreach evenly across the whole base with no way to tell who was actually at risk. The question I set out to answer: given the basic information the business already holds about a customer, can we flag who is likely to leave before they leave? An early-warning signal lets customer success direct its limited retention budget at the customers most likely to churn, instead of spending it on customers who were never going anywhere.</p>
+
+    <h4>What I did</h4>
+    <p>Built an end-to-end churn prediction pipeline on 1,000 customer records: cleaned and encoded the data, ran exploratory analysis to find the drivers of churn, engineered a compact four-feature set (age, gender, tenure, monthly charges), then trained and tuned five algorithms (Logistic Regression, SVM, KNN, Random Forest, Decision Tree) via 5-fold GridSearchCV. Selected a linear SVM (C = 0.01) at 90.5% test accuracy, tied for best while offering a simpler, more stable decision boundary on a small dataset.</p>
+    <p>Delivered as a usable tool, not just a notebook: packaged the model and its fitted scaler into a Streamlit web app so a non-technical customer success or sales rep can enter a customer's details and get an instant churn / no-churn read. No code, no notebook.</p>
+
+    <h4>Insights that shaped retention strategy</h4>
+    <ul class="bullets">
+      <li>Tenure was the strongest churn signal: churned customers averaged 17.5 months vs. 30.3 for retained ones, showing that risk is concentrated in the first two years, so onboarding and early-life engagement is where retention spend pays off.</li>
+      <li>Price sensitivity was real: churned customers paid ~$13 more per month on average ($75.96 vs. $62.55), pointing to bill-shock as a cancellation trigger and a case for plan-fit reviews on high-bill accounts.</li>
+      <li>Contract length correlated with lower bills ($75.91 month-to-month → $71.33 two-year), supporting a push to migrate at-risk month-to-month customers onto longer terms.</li>
+      <li>Documented the model's limitation honestly: the dataset is heavily imbalanced (88.3% churned), so accuracy overstates real-world performance. Flagged this as a must-fix before the model drives high-stakes retention decisions.</li>
+    </ul>
+  </template>
+
+  <template id="case-estate">
+    <span class="mono case__num">04 / 04</span>
+    <h2 class="case__title">House Price Prediction — EstateIQ</h2>
+    <ul class="tags"><li>Python</li><li>scikit-learn</li><li>Streamlit</li></ul>
+    <a class="link-arrow" href="https://github.com/mohitt045/House-price-prediction" target="_blank" rel="noopener">View repository <i>↗</i></a>
+
+    <h4>Business problem</h4>
+    <p>Property valuation is one of the most consequential and least transparent decisions in the housing market. A buyer, a seller, and a lender routinely arrive at three different numbers for the same house. Traditional valuation depends on the judgement of a human appraiser, which is slow to obtain, expensive, inconsistent between appraisers, and difficult to audit. The problem I set out to solve: give a non-expert an instant, reproducible price estimate grounded in thousands of real transactions rather than one person's recollection, and make it usable by someone who will never open a notebook.</p>
+
+    <h4>What I did</h4>
+    <p>Took 14,619 property transactions end to end: validated data integrity, ran exploratory analysis, then deliberately selected five predictors a homeowner can answer without consulting a document (bedrooms, bathrooms, living area, condition, nearby schools), trading some raw accuracy for a tool an ordinary person can actually operate. Trained three algorithms of increasing complexity (Linear Regression, a tuned Decision Tree, and a tuned Random Forest) so the ensemble had to justify its complexity rather than being assumed best. Both tree models were tuned with exhaustive GridSearchCV over 5-fold cross-validation, and all three were judged on a held-out test set of 2,924 properties using three complementary metrics.</p>
+
+    <h4>Result</h4>
+    <p>The Random Forest won on every metric (MAE ≈ 158,600 · RMSE 247,627 · R² 0.586), cutting average error by ~34% against a naive mean-prediction baseline of 240,169. Serialised with joblib and deployed as EstateIQ, a custom-styled Streamlit application that returns a valuation instantly from five form fields.</p>
+
+    <h4>Analysis that shaped the product</h4>
+    <ul class="bullets">
+      <li>Living area drives 95.7% of the model's decision-making, a finding with a direct user consequence: square footage is the one input that must be accurate, while an error in school count barely moves the valuation at all.</li>
+      <li>Diagnosed why the ensemble won, not just that it won. The single Decision Tree beat Linear Regression on MAE but lost on RMSE: better on typical cases, worse on hard ones. The Random Forest eliminated exactly that weakness by averaging across trees, which is the empirical justification for using an ensemble here.</li>
+      <li>Documented the ceiling honestly: the model ignores location entirely, so two identical houses in different neighbourhoods get the same valuation; R² 0.586 leaves ~41% of price variation unexplained; and the right-skewed price distribution means luxury properties are systematically underestimated. I named adding location as the single highest-value next improvement.</li>
+    </ul>
+  </template>
+
+  <!-- ====== SCRIPTS ====== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
