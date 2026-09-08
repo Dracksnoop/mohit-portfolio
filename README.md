@@ -3,6 +3,11 @@
 One-page, scroll-driven portfolio. Static HTML/CSS/JS, no build step.
 Motion is powered by [GSAP](https://gsap.com) + ScrollTrigger and [Lenis](https://lenis.darkroom.engineering) (loaded from CDN).
 
+## Résumé
+
+The hero's "Download my resume" button serves `Mohit_Pal_Resume.pdf` from the project root.
+To update it, replace that file (keep the same name) and push.
+
 ## Contact links
 
 Email, phone, GitHub and LinkedIn are set in `index.html` (contact section) and `js/main.js` (`SITE.linkedin`).
