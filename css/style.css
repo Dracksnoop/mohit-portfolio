@@ -483,8 +483,10 @@ main { position: relative; z-index: 1; }
 }
 
 @media (max-width: 900px) {
-  .nav__links, .nav__cta { display: none; }
-  .nav__burger { display: block; }
+  .nav { gap: 0.75rem; }
+  .nav__links { display: none; }
+  .nav__cta { margin-left: auto; }
+  .nav__burger { display: block; margin-left: 0; }
   .hero__grid { grid-template-columns: 1fr; }
   .hero__visual { order: -1; }
   .portrait { width: min(260px, 62vw); }
